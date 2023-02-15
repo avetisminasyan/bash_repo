@@ -63,41 +63,4 @@ done '
 # done
 
 
-# then
-# 	if [ -d $second_arg ]
-# 	then 
-# 		cd $second_arg
-# 		if [ -e $f1_name  ]
-# 		then
-# 			rm -r $f1_name
-# 			touch $f1_name
-# 			while read -r line; do
-#     			echo $line>>$f1_name
-# 			done <$first_arg
-# 		else	
-# 			cd $second_arg
-# 			touch $f1_name
-# 			while read -r line; do
-#     			echo $line>>$f1_name
-# 			done <$first_arg
-# 		fi
-# 	elif [ -f $second_arg ]
-# 	then	
-
-# 		rm -r $second_arg
-# 		mkdir $second_arg
-# 		cd ..
-# 		touch $f2_name
-# 		while read -r line;do
-# 		echo $line>>$f2_name
-# 		done<$first_arg
-# 	elif [ ! -f $second_arg ]
-# 	then
-# 		mkdir $second_arg
-# 		cd ..
-# 		touch $f2_name
-# 		while read -r line;do
-# 		echo $line>>$f2_name
-# 		done <$first_arg
-# 	fi
 
