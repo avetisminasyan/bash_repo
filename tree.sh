@@ -8,10 +8,9 @@ do
 		#if [ ! `ls -A $content/ | wc -m` == "0" ];
 		#then	
 		d="$(basename -- $content)"
-		echo -e "|$a$d --THis is directory"
+		echo -e "|$a$d"
 		a+="-"
    		func_m $content
-#		echo "THis is not empy dir $content  "
 		a="${a::-1}"
 	else	
 		file_c=$(( $file_c +1  ))
@@ -20,7 +19,6 @@ do
 	fi
 done
 }
-#func_m $PWD
 main(){
 a="-"
 dir_c=0
